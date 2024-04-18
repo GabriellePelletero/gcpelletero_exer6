@@ -1,5 +1,6 @@
 import needle from 'needle';
 
+//post request to save student 1
 needle.post('http://localhost:3000/save-student', {
     stdnum:"2001",
     fname:"Mary Jane",
@@ -13,6 +14,7 @@ needle.post('http://localhost:3000/save-student', {
     }
 });
 
+//post request to save student 2
 needle.post('http://localhost:3000/save-student', {
     stdnum:"2002",
     fname:"Lenard",
@@ -26,7 +28,7 @@ needle.post('http://localhost:3000/save-student', {
     }
 });
 
-
+//post request to save student 3
 needle.post('http://localhost:3000/save-student', {
     stdnum:"2003",
     fname:"Steve",
@@ -40,6 +42,7 @@ needle.post('http://localhost:3000/save-student', {
     }
 });
 
+//post request to save student 4
 needle.post('http://localhost:3000/save-student', {
     stdnum:"2000",
     fname:"Kyle",
@@ -53,6 +56,7 @@ needle.post('http://localhost:3000/save-student', {
     }
 });
 
+//post request to save student 5
 needle.post('http://localhost:3000/save-student', {
     stdnum:"2002",
     fname:"Grace",
@@ -66,6 +70,7 @@ needle.post('http://localhost:3000/save-student', {
     }
 });
 
+//post request to update students information
 needle.post('http://localhost:3000/update', {
     fname:"Mary Jane",
     lname: "Parker",
@@ -77,7 +82,10 @@ needle.post('http://localhost:3000/update', {
     }
 });
 
-// needle.post('http://localhost:3000/remove-user', (err,res) => {
+//post request to remove a user by student number
+// needle.post('http://localhost:3000/remove-user', {
+//     stdnum:"2003",
+// },(err, res) => {
 //     if(err) {
 //         console.error('ERROR', err);
 //     } else {
@@ -85,6 +93,7 @@ needle.post('http://localhost:3000/update', {
 //     }
 // });
 
+//post request to remove all user 
 // needle.post('http://localhost:3000/remove-all-user', (err,res) => {
 //     if(err) {
 //         console.error('ERROR', err);
@@ -93,7 +102,8 @@ needle.post('http://localhost:3000/update', {
 //     }
 // });
 
-needle.get('http://localhost:3000/user?stdnum=‘8051495845’', (err,res) => {
+//get request to retrieve a user by student number
+needle.get('http://localhost:3000/user?stdnum="8051495845"', (err,res) => {
     if(err) {
         console.error('ERROR', err);
     } else {
@@ -101,6 +111,7 @@ needle.get('http://localhost:3000/user?stdnum=‘8051495845’', (err,res) => {
     }
 });
 
+//get request to retrieve all members
 needle.get('http://localhost:3000/members ', (err,res) => {
     if(err) {
         console.error('ERROR', err);

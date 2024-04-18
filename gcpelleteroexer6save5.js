@@ -1,6 +1,6 @@
 import needle from 'needle';
 
-needle.post('http://localhost:3000/saveStudent', {
+needle.post('http://localhost:3000/save-student', {
     stdnum:"2001",
     fname:"Mary Jane",
     lname:"Watson",
@@ -13,7 +13,7 @@ needle.post('http://localhost:3000/saveStudent', {
     }
 });
 
-needle.post('http://localhost:3000/saveStudent', {
+needle.post('http://localhost:3000/save-student', {
     stdnum:"2002",
     fname:"Lenard",
     lname:"Mazo",
@@ -27,7 +27,7 @@ needle.post('http://localhost:3000/saveStudent', {
 });
 
 
-needle.post('http://localhost:3000/saveStudent', {
+needle.post('http://localhost:3000/save-student', {
     stdnum:"2003",
     fname:"Steve",
     lname:"Rogers",
@@ -40,7 +40,7 @@ needle.post('http://localhost:3000/saveStudent', {
     }
 });
 
-needle.post('http://localhost:3000/saveStudent', {
+needle.post('http://localhost:3000/save-student', {
     stdnum:"2000",
     fname:"Kyle",
     lname:"Ford",
@@ -53,7 +53,7 @@ needle.post('http://localhost:3000/saveStudent', {
     }
 });
 
-needle.post('http://localhost:3000/saveStudent', {
+needle.post('http://localhost:3000/save-student', {
     stdnum:"2002",
     fname:"Grace",
     lname:"Adams",
@@ -65,4 +65,3 @@ needle.post('http://localhost:3000/saveStudent', {
         console.log(res.body);
     }
 });
-
